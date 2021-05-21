@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectDelivery">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/grad"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_arrow_back_black_24dp"
+                    android:backgroundTint="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:gravity="center|left"
+                android:text="Payment details"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+        <!--<TextView
+            android:id="@+id/text_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_marginBottom="55dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.75"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textColor="#000000"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Delivery address"
+                                android:textStyle="bold"/>
+                            <Button
+                                android:id="@+id/change"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.25"
+                                android:layout_height="30dp"
+                                android:text="change"
+                                android:background="@color/gradStart"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#707070"
+                            android:layout_marginTop="7dp"/>
+                        <TextView
+                            android:id="@+id/myaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:layout_marginTop="7dp"
+                            android:text="Add delivery address here .."/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:id="@+id/ordertiming"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your order will be delivered with in 5hours.Orders after 5pm will be delivered by 10am on the following day."
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textStyle="italic"
+                        android:textSize="16dp"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <!--   <androidx.cardview.widget.CardView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginLeft="20dp">
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="something about delivery"
+                           android:textAlignment="center"
+                           android:textColor="#000000"
+                           android:textStyle="italic"
+                           android:gravity="center_horizontal"
+                           android:layout_margin="5dp"/>
+                   </androidx.cardview.widget.CardView>-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+
+
+                    <LinearLayout
+
+                        android:id="@+id/ll_Checkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bill details"
+                                android:textColor="#000000"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/montserrat"
+                                android:textStyle="bold"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#707070"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                >
+                                <TextView
+                                    android:text="Subtotal"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textSize="16dp"
+                                    android:textColor="#000000"/>
+                                <TextView
+                                    android:textAlignment="viewEnd"
+                                    android:gravity="end"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/subtotal"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                >
+                                <TextView
+                                    android:text="Discount"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textSize="16dp"
+                                    android:textColor="#000000"/>
+                                <TextView
+                                    android:textAlignment="viewEnd"
+                                    android:gravity="end"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/discount"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                >
+                                <TextView
+                                    android:text="Deliverycharges"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textSize="16dp"
+                                    android:textColor="#000000"/>
+                                <TextView
+                                    android:textAlignment="viewEnd"
+                                    android:gravity="end"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/deliverycharges"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/deliverapplicable"
+                            android:text="(applicable on orders less than ₹ 250)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="12dp"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:id="@+id/couponid"
+                            android:text=""
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp">
+
+
+                            <TextView
+                                android:id="@+id/dsd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/opensans_semibold"
+                                android:text="Payable Amount"
+                                android:textColor="@color/darkGrey" />
+
+
+                            <TextView
+                                android:id="@+id/rupyy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/dsd"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/opensans_semibold"
+                                android:text="@string/currency"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/darkGrey"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/dsd"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@+id/rupyy"
+
+                                android:fontFamily="@font/opensans_bold"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:background="@drawable/orange_grad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:padding="7dp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_temporary_offer"/>
+                    <TextView
+                        android:id="@+id/coupon"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:text="Avail coupon discount"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"/>
+                    <TextView
+                        android:textAlignment="viewEnd"
+                        android:id="@+id/apply"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:text="Apply Now"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="PROCEED TO PAY"
+        android:background="@color/gradStart"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        />
+</RelativeLayout>

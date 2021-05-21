@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1016672314201",
+    "firebase_url": "https://saladbox-753ce.firebaseio.com",
+    "project_id": "saladbox-753ce",
+    "storage_bucket": "saladbox-753ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016672314201:android:ca32dc5d57dcc45404e248",
+        "android_client_info": {
+          "package_name": "com.example.saladbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016672314201-tfmr6lkd9q70jg9p5uarmo5qv00jl87r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saladbox",
+            "certificate_hash": "acae36d04c29776b6823c2ae33d4a03d9e646e85"
+          }
+        },
+        {
+          "client_id": "1016672314201-udldsm15akkmc0rd0p6tpapm7vuj46ut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saladbox",
+            "certificate_hash": "d21bb27c9e0700257e21623784f46a5436b6700b"
+          }
+        },
+        {
+          "client_id": "1016672314201-9s4ae0t9i5tmkrd2tj3snunf9kqsasom.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQgq6rgoQ6X8Z98rFshvcCcZ4TK3gaXA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016672314201-9s4ae0t9i5tmkrd2tj3snunf9kqsasom.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

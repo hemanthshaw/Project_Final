@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_home_background"
+    android:layout_weight="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/grad"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_arrow_back_black_24dp"
+                    android:backgroundTint="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:gravity="center|left"
+                android:text="Add Money"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:textColor="#000000"
+                android:text="Your Wallet Balance is"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="34dp"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:text="00"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:id="@+id/balance"
+                android:gravity="center_horizontal" />
+          <Button
+              android:visibility="gone"
+              android:layout_width="150dp"
+              android:layout_height="50dp"
+              android:layout_marginTop="40dp"
+              android:text="Add money"
+              android:textSize="18dp"
+              android:textColor="#FFFFFF"
+              android:id="@+id/addmoney"
+              android:layout_gravity="center"
+              android:background="#5858D8"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:background="@drawable/buttons"
+                            android:text="start shopping"
+                            android:textColor="#ffffff"
+                            android:id="@+id/start"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
